@@ -1,31 +1,38 @@
 {
-    
     "builds": [
-        {
-            "src": "app.js",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "build/**",
-            "use": "@vercel/static"
-        }
+      {
+        "src": "app.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "build/**",
+        "use": "@vercel/static"
+      }
     ],
-    "routes":[
-        {
-            "src": "/products",
-            "dest": "app.js"
-        },
-        {
-            "src": "/products/(.*)",
-            "dest": "app.js"
-        },
-        {
-            "src": "/",
-            "dest": "build/index.html"
-        },
-        {
-            "src": "/(.+)",
-            "dest": "build/$1"
-        }
+    "routes": [
+      {
+        "src": "/products",
+        "dest": "app.js"
+      },
+      {
+        "src": "/products/(.*)",
+        "dest": "app.js"
+      },
+      {
+        "src": "/add",
+        "dest": "build/index.html"
+      },
+      {
+        "src": "/edit/(.*)",
+        "dest": "build/index.html"
+      },
+      {
+        "src": "/",
+        "dest": "build/index.html"
+      },
+      {
+        "src": "/(.+)",
+        "dest": "build/$1"
+      }
     ]
-}
+  }
