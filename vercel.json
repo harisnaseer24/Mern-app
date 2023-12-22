@@ -2,7 +2,7 @@
   "version":2,
     "builds": [
       {
-        "src": "index.js",
+        "src": "./index.js",
         "use": "@vercel/node"
       },
       {
@@ -13,11 +13,11 @@
     "routes": [
       {
         "src": "/products",
-        "dest": "build/index.html"
+        "dest": "/index.js"
       },
       {
         "src": "/products/(.*)",
-        "dest": "build/index.html"
+        "dest": "/index.js"
       },
       {
         "src": "/add",
@@ -29,7 +29,7 @@
       },
       {
         "src": "/",
-        "dest": "build/index.html"
+        "dest": "/build/index.html"
       },
       {
         "src": "/(.+)",
