@@ -12,7 +12,7 @@
     ],
     "routes": [
       {
-        "src": "/products",
+        "src": "/products/",
         "dest": "/build/index.html"
       },
       {
