@@ -10,6 +10,7 @@ const Product=model.Product;
 
 
 exports.getAllModels =async (req, res) => {
+  console.log("finding products")
 let products= await Product.find()
   res.json(products);
   console.log(products);
