@@ -13,7 +13,7 @@
     "routes": [
       {
         "src": "/products",
-        "dest": "/index.js"
+        "dest": "/build/index.html"
       },
       {
         "src": "/products/(.*)",
@@ -21,7 +21,7 @@
       },
       {
         "src": "/add",
-        "dest": "build/index.html"
+        "dest": "/build/index.html"
       },
       {
         "src": "/edit/(.*)",
