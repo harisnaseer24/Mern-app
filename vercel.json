@@ -17,7 +17,7 @@
       },
       {
         "src": "/products/(.*)",
-        "dest": "index.js"
+        "dest": "index..html"
       },
       {
         "src": "/add",
